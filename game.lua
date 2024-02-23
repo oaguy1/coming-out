@@ -26,4 +26,7 @@ love.keypressed = function(key)
   end
   return mode.keypressed(key, set_mode)
 end
-return love.keypressed
+love.keyreleased = function(key)
+  return mode.keyreleased(key, set_mode)
+end
+return love.keyreleased

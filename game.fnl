@@ -24,3 +24,6 @@
     (love.event.quit))
   
   (mode.keypressed key set-mode))
+
+(fn love.keyreleased [key]
+  (mode.keyreleased key set-mode))

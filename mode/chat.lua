@@ -144,4 +144,6 @@ local function mousereleased(x, y, button, set_mode)
 end
 local function keypressed(key, set_mode)
 end
-return {init = init, update = update, draw = draw, mousereleased = mousereleased, keypressed = keypressed}
+local function keyreleased(key, set_mode)
+end
+return {init = init, update = update, draw = draw, mousereleased = mousereleased, keypressed = keypressed, keyreleased = keyreleased}

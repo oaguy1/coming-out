@@ -151,4 +151,6 @@
                     (set-mode "mode.menu")))
 
  :keypressed (fn keypressed [key set-mode]) 
+
+ :keyreleased (fn keyreleased [key set-mode])
 }

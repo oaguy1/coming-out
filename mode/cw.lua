@@ -3,7 +3,7 @@ local function inside_button_3f(x, y, button_x, button_y, button_width, button_h
   return ((button_x <= x) and (button_y <= y) and (x <= (button_x + button_width)) and (y <= (button_y + button_height)))
 end
 local function init()
-  __fnl_global__content_2dwarning = "This game is a coming out story from the early 2000's between two boys over the internet. As such, some paths of the interactive story contain slurs against gay people.\n\nIf you don't want to experience that, please click the 'Exit' button below. Otherwise, click the 'Play' button to continue. FUCK YOU"
+  __fnl_global__content_2dwarning = "This game is a coming out story from the early 2000's between two boys over the internet. As such, some paths of the interactive story contain slurs against gay people.\n\nIf you don't want to experience that, please click the 'Exit' button below. Otherwise, click the 'Play' button to continue."
   font = love.graphics.newFont(16)
   return nil
 end
@@ -76,4 +76,6 @@ local function mousereleased(x, y, button, set_mode)
 end
 local function keypressed(key, set_mode)
 end
-return {init = init, update = update, draw = draw, mousereleased = mousereleased, keypressed = keypressed}
+local function keyreleased(key, set_mode)
+end
+return {init = init, update = update, draw = draw, mousereleased = mousereleased, keypressed = keypressed, keyreleased = keyreleased}
